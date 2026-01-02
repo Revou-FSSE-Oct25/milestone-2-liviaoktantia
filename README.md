@@ -51,4 +51,7 @@ This project was built to practice and demonstrate:
 ## How to Run the Project
 - Open `index.html` in a browser  
   **or**
-- Visit the deployed website link (GitHub)
+- Visit the deployed website link (GitHub): https://revou-fsse-oct25.github.io/milestone-2-liviaoktantia/
+- <img width="1151" height="704" alt="image" src="https://github.com/user-attachments/assets/82d2ecba-2f56-48b3-945b-90ee8e189f75" />
+
+
