@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RockPaperScissors | LiviOGame</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="container nav">
+                <div class="brand">
+                    <div class="brand-title"> LiviOGame</div>
+                    <div class="brand-subtitle">RockPaperScissors</div>
+                </div>
+
+                <nav aria-label="Primary">
+                    <a href="index.html">Home</a>
+                    <a href="guessing.html">Number Guessing</a>
+                    <a href="rps.html">RockPaperScissors</a>
+                    <a href="clicker.html">Clicker</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container game-wrap">
+            <section class="game-card" aria-labelledby="rps-title">
+                <h1 id="rps-title" class="game-title">RockPaperScissors</h1>
+                <p class="game-instructions">
+                    Choose your move. The computer will choose randomly.
+                    Classic rule apply.
+                </p>
+
+                <div class="row">
+                    <button class="btn" data-move="rock">Rock</button>
+                    <button class="btn" data-move="paper">Paper</button>
+                    <button class="btn" data-move="scissors">Scissors</button>
+                    <button id="reset-score" class="btn">Reset Score</button>
+                    <a class="btn" href="index.html">Back to Home</a>
+                </div>
+
+                <div class="row">
+                    <div class="badge">You: <span id="you-score">0</span></div>
+                    <div class="badge">Computer: <span id="cpu-score">0</span></div>
+                </div>
+
+                <div id="rps-message" class="message" role="status" aria-live="polite">
+                    Make your move.                    
+                </div>
+            </section>            
+        </main>
+
+        <script src="js/rps.js"></script>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LiviOGame Milestone 2</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="container nav">
+                <div class="brand">
+                    <div class="brand-title">LiviOGame</div>
+                    <div class="brand-subtitle">Simple games. Just for fun.</div>
+                </div>
+
+                <nav aria-label="Primary">
+                    <a href="index.html">Home</a>
+                    <a href="guessing.html">Number Guessing</a>
+                    <a href="rps.html">RockPaperScissors</a>
+                    <a href="clicker.html">Clicker</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="hero" aria-labelledby="hero-title">
+                <h1 id="hero-title">Play quick games. Instant mood booster.</h1>
+                <p>
+                    Welcome to LiviOGame, a small collection of JavaScript-powered mini games.
+                    Pick a game below and start playing.
+                </p>
+
+                <div style="margin-top: 18px;">
+                    <button id="cta-btn" class="btn" type="button">Random game suggestion</button>
+                </div>
+
+                <p id="cta-result" style="margin-top: 12px; color:#ECFDF5;"></p>
+            </section>
+
+            <section class="section" aria-labelledby="games-title">
+                <div class="section-head">
+                    <h2 id="games-title">Available games</h2>
+                    <div class="note">Built with HTML, CSS, and Javascript</div>
+                </div>
+
+                <div class="grid">
+                    <article class="card">
+                        <h3>Number Guessing</h3>
+                        <p>
+                            Guess the secret number. Get hints ("too high" or "too low") and try to win within limited attempts.
+                        </p>
+                        <div class="meta">
+                            <span>Logic + conditions</span>
+                            <a class="btn" href="guessing.html">Play</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h3>RockPaperScissors</h3>
+                        <p>
+                            Choose your move and compete against the computer.
+                        </p>
+                        <div class="meta">
+                            <span>Switch + events</span>
+                            <a class="btn" href="rps.html">Play</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h3>Clicker Game</h3>
+                        <p>
+                            Click as fast as you can before the timer ends. Try to beat your high score.
+                        </p>
+                        <div class="meta">
+                            <span>Timer + score</span>
+                            <a class="btn" href="clicker.html">Play</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                Copyright <span id="year"></span>LiviOGame. Built for Milestone 2.
+            </div>
+        </footer>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

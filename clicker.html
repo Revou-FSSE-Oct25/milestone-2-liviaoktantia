@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Clicker Game | LiviOGame</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="container nav">
+                <div class="brand">
+                    <div class="brand-title">LiviOGame</div>
+                    <div class="brand-subtitle">Clicker Game</div>
+                </div>
+
+                <nav aria-label="Primary">
+                    <a href="index.html">Home</a>
+                    <a href="guessing.html">Number Guessing</a>
+                    <a href="rps.html">RockPaperScissors</a>
+                    <a href="clicker.html">Clicker</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container game-wrap">
+            <section class="game-card" aria-labelledby="clicker-title">
+                <h1 id="clicker-title" class="game-title">Clicker Game</h1>
+                <p class="game-instruction">
+                    Press <strong>Start</strong>, then click as many times as you can before the timer ends.
+                </p>
+
+                <div class="row">
+                    <button id="start-btn" class="btn" type="button">Start</button>
+                    <button id="reset-btn" class="btn" type="button">Reset</button>
+                    <a class="btn" href="index.html">Back to Home</a>
+                </div>
+
+                <div class="row">
+                    <div class="badge">Time left: <span id="time-left">10</span></div>
+                    <div class="badge">Score: <span id="score">0</span></div>
+                    <div class="badge">Best: <span id="best-score">0</span></div>
+                </div>
+
+                <button id="click-btn" class="btn big-btn" type="button" disabled>Click Me!</button>
+
+                <div id="clicker-message" class="message" role="status" aria-live="polite">Click Start to begin.</div>
+            </section>
+        </main>
+
+        <script src="js/clicker.js"></script>
+    </body>
+</html>
